@@ -1,0 +1,28 @@
+Максимальное число идущих подряд равных элементов
+c = 1
+mc = 1
+ap = 0
+a = int(input())
+while a != 0:
+    if(a == ap):
+        c += 1
+        mc = max(mc, c)
+    else:
+        c = 1
+    ap = a
+    a = int(input())
+print(mc)
+
+Стандартное отклонение
+from math import sqrt
+ 
+p = 0
+ps = 0
+x_i = int(input())
+n = 0
+while x_i != 0:
+    n += 1
+    p += x_i
+    ps += x_i ** 2
+    x_i = int(input())
+print(sqrt((ps - p ** 2 / n) / (n - 1)))

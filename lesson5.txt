@@ -1,0 +1,12 @@
+Замена внутри фрагмента
+a = input()
+b = a[:a.find('h')+1]
+c = a[a.rfind('h'):]
+a = a[a.find('h')+1:a.rfind('h')].replace('h', 'H')
+print(b + a + c)
+
+Удалить каждый третий символ
+a = input()
+for i in range(0,len(a)):
+    if(i%3 != 0):
+        print(a[i], end = '')
